@@ -188,10 +188,21 @@
         <div class="ornament">✦</div>
 
         <div class="links">
-          <a class="action" href="./Friends%20Cake.pdf" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M15 2v5h5"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
-            <span>قائمة الأصناف</span><span class="arrow">←</span>
-          </a>
+         <!-- زر قائمة الأصناف -->
+<button class="action" type="button" onclick="document.getElementById('langChoices').style.display = (document.getElementById('langChoices').style.display === 'none' ? 'flex' : 'none')">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M15 2v5h5"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="17"/></svg>
+  <span>قائمة الأصناف</span><span class="arrow">↓</span>
+</button>
+
+<!-- زرا الاختيار يظهران فقط عند الضغط -->
+<div id="langChoices" style="display: none; gap: 10px; width: 100%; margin-top: -4px;">
+  <a class="action ghost" href="./Friends%20Cake.pdf" target="_blank" rel="noopener" style="flex: 1; min-height: 44px; padding: 10px; font-size: 12px;">
+    <span>🇯🇴 عربي</span>
+  </a>
+  <a class="action ghost" href="./Friends%20Cake%2001.pdf" target="_blank" rel="noopener" style="flex: 1; min-height: 44px; padding: 10px; font-size: 12px;">
+    <span>🇬🇧 English</span>
+  </a>
+</div>
           <a class="action" href="https://www.instagram.com/friendscake.jo/" target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
             <span>انستقرام</span><span class="arrow">←</span>
